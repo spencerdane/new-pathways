@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Bellota;
+    src: url(./assets/fonts/Bellota/Bellota-Regular.ttf);
+}
+
+/*Color Palette
+Sky Blue: #A2E2E7
+More Sky: 91E1E7
+Dark Cloud: #F7E3AC
+Medium Cloud: #FCF3C1
+Light Cloud: #FEFDEF
+Title: #6D9ACA
+Title Shadow: #B8ECEF
+Brown hair: B8ECEF
+Skirt: F3624B
+Dark Green: 206C66
+Medium Green: 3B9277
+Light Green: 4AAE6C
+*/
+
+/*GENERAL STYLES*/
+html {
+    font-size: 100%;
+    color: navy;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #A2E2E7;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.mobile-banner {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: #6D9ACA;
+}
+
+.mobile-logo {
+    width: 4.5rem;
+}
+
+.menu-icon {
+    width: 3rem;
+}
+
+nav {
+    width: 100%;
+    background-color: #6D9ACA;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 20%;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li {
+    flex: 0 1 8rem;
+}
+
+nav a:link, nav a:visited {
+    color: navy;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: .75rem 3rem;
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    background-image: linear-gradient(to top right, #FCF3C1, #FEFDEF);
+}
+
+h2 {
+    font-family: Bellota;
+    color: #6D9ACA;
+    text-shadow: 1px 1px 2px navy;
+    
+}
+
+footer {
+    background-color: #6D9ACA;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+
+footer p {
+    display: inline;
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+footer img {
+    width: 2rem;
+    margin: .5rem;
+    transition: transform .3s ease-in-out;
+}
+
+footer img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.instagram.icon.link:hover {
+    border-radius: 10px;
+    background-color: red;
+}
+
+.whatsapp.icon.link:hover {
+    border-radius: 50% 50% 50% 0;
+    background-color: green;
+}
+
+.email.icon.link:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.calendar.icon.link:hover {
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+@media (max-width: 620px) {
+    .mobile-banner {
+        display: flex;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        position: absolute;
+        top: 3rem;
+        background-color: inherit;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        width: 70%;
+        height: unset;
+    }
+
+    nav li {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+   
+    nav a:link, nav a:visited {
+        border-bottom: solid navy;
+        background-color: #6D9ACA;
+        border-radius: 0;
+    }
+}
