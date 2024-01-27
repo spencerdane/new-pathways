@@ -48,12 +48,27 @@ header img {
     background-color: #6D9ACA;
 }
 
+h1 {
+    font-family: Bellota;
+    letter-spacing: .75rem;
+    text-shadow: 1px 1px 1px #FCF3C1;
+}
+
 .mobile-logo {
     width: 4.5rem;
 }
 
 .menu-icon {
     width: 3rem;
+}
+
+.menu-icon:hover, .menu-icon:focus {
+    background-color: #FCF3C1;
+
+}
+.menu-icon:active {
+    background-color: #B8ECEF;
+
 }
 
 nav {
@@ -91,6 +106,7 @@ h2 {
     font-family: Bellota;
     color: #6D9ACA;
     text-shadow: 1px 1px 2px navy;
+    text-align: center;
     
 }
 
@@ -98,14 +114,14 @@ footer {
     background-color: #6D9ACA;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0 15%;
 }
 
 footer p {
     display: inline;
-    font-size: 1.5rem;
-    margin-right: auto;
+    font-size: 1rem;
+    margin-right: 2rem;
 }
 
 footer img {
@@ -138,6 +154,10 @@ footer img:hover {
     background-color: yellow;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 620px) {
     .mobile-banner {
         display: flex;
@@ -150,16 +170,17 @@ footer img:hover {
     nav {
         display: flex;
         justify-content: right;
-        width: 100%;
+        width: 70%;
         position: absolute;
         top: 3rem;
         background-color: inherit;
+        align-self: flex-end;
     }
 
     nav ul {
         flex-direction: column;
         margin: 0;
-        width: 70%;
+        width: 100%;
         height: unset;
     }
 
