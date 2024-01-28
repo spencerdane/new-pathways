@@ -30,6 +30,7 @@ body {
     background-color: #A2E2E7;
 }
 
+/*HEADER STYLES INCLUDE NP ARTWORK, NAV BARS, AND LOGOS*/
 header {
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@ header img {
 h1 {
     font-family: Bellota;
     letter-spacing: .75rem;
-    text-shadow: 1px 1px 1px #FCF3C1;
+    text-shadow: 1px 1px 1px #B8ECEF;
 }
 
 .mobile-logo {
@@ -64,11 +65,10 @@ h1 {
 
 .menu-icon:hover, .menu-icon:focus {
     background-color: #FCF3C1;
-
 }
+
 .menu-icon:active {
     background-color: #B8ECEF;
-
 }
 
 nav {
@@ -102,12 +102,16 @@ nav a:hover, nav a:focus {
     background-image: linear-gradient(to top right, #FCF3C1, #FEFDEF);
 }
 
+main {
+    padding: 1rem;
+}
+
 h2 {
     font-family: Bellota;
     color: #6D9ACA;
     text-shadow: 1px 1px 2px navy;
     text-align: center;
-    
+    margin: 0;
 }
 
 footer {
@@ -135,13 +139,13 @@ footer img:hover {
 }
 
 .instagram.icon.link:hover {
-    border-radius: 10px;
-    background-color: red;
+    border-radius: 30%;
+    background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
 }
 
 .whatsapp.icon.link:hover {
     border-radius: 50% 50% 50% 0;
-    background-color: green;
+    background-color: #25D366;
 }
 
 .email.icon.link:hover {
