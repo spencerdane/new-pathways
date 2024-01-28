@@ -47,6 +47,7 @@ header img {
     align-items: center;
     height: 3rem;
     background-color: #6D9ACA;
+    z-index: 100;
 }
 
 h1 {
@@ -74,6 +75,7 @@ h1 {
 nav {
     width: 100%;
     background-color: #6D9ACA;
+    z-index: 100;
 }
 
 nav ul {
@@ -162,6 +164,17 @@ footer img:hover {
     display: none;
 }
 
+.underlay {
+    background-color: #000;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 @media (max-width: 620px) {
     .mobile-banner {
         display: flex;
@@ -195,7 +208,7 @@ footer img:hover {
     }
    
     nav a:link, nav a:visited {
-        border-bottom: solid navy;
+        border-top: solid navy;
         background-color: #6D9ACA;
         border-radius: 0;
     }
