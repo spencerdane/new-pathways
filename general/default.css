@@ -72,14 +72,13 @@ h1 {
     background-color: #B8ECEF;
 }
 
-nav {
+nav.desktop-nav {
     width: 100%;
     background-color: #6D9ACA;
-    z-index: 100;
     font-size: 1.1rem;
 }
 
-nav ul {
+nav.desktop-nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -89,11 +88,11 @@ nav ul {
     justify-content: space-around;
 }
 
-nav li {
+nav.desktop-nav li {
     flex: 0 1 8rem;
 }
 
-nav a:link, nav a:visited {
+nav.desktop-nav a:link, nav.desktop-nav a:visited {
     color: navy;
     text-decoration: none;
     border-radius: 20px;
@@ -101,7 +100,52 @@ nav a:link, nav a:visited {
     display: block;
 }
 
-nav a:hover, nav a:focus {
+nav.desktop-nav a:hover, nav.desktop-nav a:focus {
+    background-image: linear-gradient(to top right, #FCF3C1, #FEFDEF);
+}
+
+nav.mobile-nav {
+    z-index: 100;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 4px navy;
+    display: flex;
+    justify-content: right;
+    width: 70%;
+    position: absolute;
+    top: 3rem;
+    background-color: inherit;
+    align-self: flex-end;
+}
+
+nav.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: unset;
+}
+
+nav.mobile-nav li {
+    width: 100%;
+    text-align: center;
+}
+
+nav.mobile-nav a:link, nav.mobile-nav a:visited {
+    border-top: solid navy;
+    background-color: #6D9ACA;
+    border-radius: 0;
+    color: navy;
+    text-decoration: none;
+    padding: .75rem 3rem;
+    display: block;
+}
+
+nav.mobile-nav a:hover, nav.mobile-nav a:focus {
     background-image: linear-gradient(to top right, #FCF3C1, #FEFDEF);
 }
 
@@ -158,11 +202,15 @@ footer img:hover {
     background-color: lightskyblue;
 }
 
+.mobile-nav.hidden {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
 
-.underlay {
+.mobile-underlay {
     background-color: #000;
     opacity: .5;
     position: fixed;
@@ -178,36 +226,7 @@ footer img:hover {
         display: flex;
     }
 
-    .desktop-logo {
+    .desktop-logo, nav.desktop-nav {
         display: none;
-    }
-
-    nav {
-        display: flex;
-        justify-content: right;
-        width: 70%;
-        position: absolute;
-        top: 3rem;
-        background-color: inherit;
-        align-self: flex-end;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin: 0;
-        width: 100%;
-        height: unset;
-    }
-
-    nav li {
-        flex: unset;
-        width: 100%;
-        text-align: center;
-    }
-   
-    nav a:link, nav a:visited {
-        border-top: solid navy;
-        background-color: #6D9ACA;
-        border-radius: 0;
     }
 }

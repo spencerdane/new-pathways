@@ -1,23 +1,16 @@
-$(window).on("load resize", function (){
-    adjustNav($(this).width());
+$(window).on("resize", function (){
+    $(".mobile-nav").addClass("hidden");
+    $(".mobile-underlay").addClass("hidden");
 })
-
-$(".mobile-underlay").on("click", function () {
-    if (!$("nav").hasClass(".hidden")) {
-         adjustNav();
-     }
- }) 
 
 $(".menu-icon").on("click", function() {
-    $("nav").toggleClass("hidden");
-    $(".mobile-underlay").toggleClass("underlay");
+    $(".mobile-nav").toggleClass("hidden");
+    $(".mobile-underlay").toggleClass("hidden");
 })
 
-function adjustNav(width) {
-    if (width <= 620) {
-        $("nav").addClass("hidden");
-    } else {
-        $("nav").removeClass("hidden");
+$(".mobile-underlay").on("click", function() {
+    if (!$("mobile-nav").hasClass("hidden")) {
+        $(".mobile-nav").addClass("hidden");
+        $(".mobile-underlay").addClass("hidden");
     }
-    $(".mobile-underlay").removeClass("underlay");
-}
+})
