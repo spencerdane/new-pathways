@@ -1,5 +1,5 @@
 $(window).on("load resize", function (){
-    adjustNav();
+    adjustNav($(this).width());
 })
 
 $(".mobile-underlay").on("click", function () {
@@ -13,8 +13,8 @@ $(".menu-icon").on("click", function() {
     $(".mobile-underlay").toggleClass("underlay");
 })
 
-function adjustNav() {
-    if ($(window).width() <= 620) {
+function adjustNav(width) {
+    if (width <= 620) {
         $("nav").addClass("hidden");
     } else {
         $("nav").removeClass("hidden");

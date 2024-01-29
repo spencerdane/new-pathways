@@ -76,6 +76,7 @@ nav {
     width: 100%;
     background-color: #6D9ACA;
     z-index: 100;
+    font-size: 1.1rem;
 }
 
 nav ul {
@@ -104,16 +105,13 @@ nav a:hover, nav a:focus {
     background-image: linear-gradient(to top right, #FCF3C1, #FEFDEF);
 }
 
-main {
-    padding: 1rem;
-}
-
 h2 {
     font-family: Bellota;
     color: #6D9ACA;
     text-shadow: 1px 1px 2px navy;
     text-align: center;
-    margin: 0;
+    margin: 2rem;
+    font-size: 2rem;
 }
 
 footer {
@@ -137,7 +135,7 @@ footer img {
 }
 
 footer img:hover {
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.3rem);
 }
 
 .instagram.icon.link:hover {
@@ -151,13 +149,13 @@ footer img:hover {
 }
 
 .email.icon.link:hover {
-    background-color: blue;
+    background-color: white;
     border-radius: 5px;
 }
 
 .calendar.icon.link:hover {
     border-radius: 5px;
-    background-color: yellow;
+    background-color: lightskyblue;
 }
 
 .hidden {
