@@ -17,26 +17,26 @@ h2 {
     margin: 1rem;
 }
 
-.btn {
-    border-radius: 2rem;
-    background-color: #6D9ACA;
-    padding: .5rem 2rem;
-    width: 7.5rem;
-    text-align: center;
+a:hover {
+    text-decoration: none;
 }
 
 .question.btn {
+    justify-self: center;
     font-size: 1.5rem;
-    background-color: #6D9ACA;
-    box-shadow: 2px 2px 4px navy;
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 0 3rem 2rem;
+    margin: 0 2rem 2rem;
     padding: .75rem;
-    width: unset;
+    width: fit-content;
+    background-color: #6D9ACA;
+    transition: all .2s ease-out;
+}
+
+.question.btn:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 4px 4px 8px navy;
 }
 
 .answer.block {
@@ -44,10 +44,15 @@ h2 {
     padding: 2rem;
     font-size: 1.25rem;
     text-align: justify;
-    
+    justify-self: center;
     border-radius: 2rem;
     border: double navy;
-    margin: 2rem 3rem;
+    margin: 2rem 2rem;
+}
+
+.answer.block ul {
+    columns: 2;
+    text-align: left;
 }
 
 .answer.block div {
@@ -97,19 +102,20 @@ h2 {
     padding: 2rem;
     grid-row: 6/7;
     grid-column: 1/-1;
-    padding: 2rem 10rem;
+    padding: 2rem 8rem;
     text-align: center;
 }
 
 .profile {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1.25rem;
 }
 
 .profile.right {
     flex-direction: row-reverse;
+    
 }
 
 .profile img {
@@ -124,14 +130,30 @@ aside {
     border-radius: 2rem 0 0 2rem;
     margin-bottom: 2rem;
     padding-left: .5rem;
+    border: double navy;
+}
+
+aside a:link, aside a:visited {
+    color: navy;
 }
 
 aside h3 {
     text-align: center;
 }
 
-.answer.block.hidden {
-    display: none;
+aside div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+aside div a {
+    flex: 0 1 25%;
+    text-align: center;
+}
+
+aside div a img {
+    width: 70%;
 }
 
 @media (max-width: 828px) {
@@ -142,10 +164,43 @@ aside h3 {
     aside {
         display: none;
     }
+
+    .testimonials {
+        padding: 2rem 6rem;
+    }
+
+    .btn.question {
+        width: 70%;
+    }
 }
 
 @media (max-width: 620px) {
     .question.btn p {
         text-decoration: underline;
+    }
+
+    .btn.question {
+        font-size: 1.2rem;
+        transition: none;
+    }
+
+    .btn.question:hover {
+        transform: none;
+        box-shadow: 2px 2px 4px navy;
+    }
+
+    .btn.question img {
+        width: 80%;
+    }
+
+    .testimonials {
+        background-image: linear-gradient(#eee .1em, transparent .1em);
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .testimonials {
+        padding: 2rem;
     }
 }

@@ -158,6 +158,25 @@ h2 {
     font-size: 2rem;
 }
 
+.btn, .btn:link, .btn:visited {
+    border-radius: 2rem;
+    background-color: #6D9ACA;
+    padding: .5rem 2rem;
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 2px 2px 4px navy;
+    text-decoration: none;
+    color: navy;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #B8ECEF;
+}
+
+.btn:active {
+    background-color: #FEFDEF;
+}
+
 footer {
     background-color: #6D9ACA;
     display: flex;
@@ -228,5 +247,17 @@ footer img:hover {
 
     .desktop-logo, nav.desktop-nav {
         display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    h1 {
+        letter-spacing: .5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        letter-spacing: .25rem;
     }
 }
