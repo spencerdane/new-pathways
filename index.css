@@ -199,6 +199,12 @@ aside div a img {
     }
 }
 
+@media (max-width: 560px) {
+    .answer.block ul {
+        columns: 1;
+    }
+}
+
 @media (max-width: 500px) {
     .question.btn {
         flex-direction: row;
@@ -228,6 +234,17 @@ aside div a img {
     .profile img {
         margin: 0;
     }
+    
+    .answer.block {
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: .75rem;
+        width: 90%;
+    }
+
+    .question.btn {
+        width: 90%;
+    }
 }
 
 @media (max-width: 460px) {
@@ -235,9 +252,12 @@ aside div a img {
         padding: 2rem;
     }
 
-    .answer.block ul {
-        columns: 1;
+    .answer.block {
+        text-align: left;
     }
+
+
+    
 
     
 }

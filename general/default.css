@@ -257,6 +257,16 @@ footer img:hover {
 
     footer img {
         width: 1.5rem;
+        transition: none;
+    }
+
+    footer img:hover {
+        transform: none;
+    }
+
+    .instagram.icon.link:hover, .whatsapp.icon.link:hover, .email.icon.link:hover, .calendar.icon.link:hover {
+        background-image: unset;
+        background-color: unset;
     }
 }
 
