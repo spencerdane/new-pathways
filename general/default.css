@@ -240,24 +240,48 @@ footer img:hover {
     z-index: 10;
 }
 
+
+/*MOBILE SCREEN*/
 @media (max-width: 620px) {
     .mobile-banner {
         display: flex;
     }
 
+    .btn:active {
+        background-color: #B8ECEF;
+    }
+
     .desktop-logo, nav.desktop-nav {
         display: none;
     }
-}
 
-@media (max-width: 490px) {
-    h1 {
-        letter-spacing: .5rem;
+    footer img {
+        width: 1.5rem;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+    h1 {
+        letter-spacing: .5rem;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 460px) {
     h1 {
         letter-spacing: .25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        letter-spacing: 0;
     }
 }

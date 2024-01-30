@@ -1,18 +1,3 @@
-/*var mobile;
-
-$(window).on("load resize", function() {
-    updateMobile();
-})
-
-function updateMobile() {
-    mobile = $(window).width() <= 620;
-    if (mobile) {
-        $(".answer.block").removeClass("hidden");
-    } else {
-        $(".answer.block").addClass("hidden");
-    }
-} */
-
 var allHidden = true;
 var lastAnswer = "";
 

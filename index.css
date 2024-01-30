@@ -199,8 +199,45 @@ aside div a img {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+    .question.btn {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+    }
+
+    .question.btn img {
+        width: 40%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile, .profile.right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile p {
+        margin-bottom: 4rem;
+    }
+
+    .profile img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 460px) {
     .testimonials {
         padding: 2rem;
     }
+
+    .answer.block ul {
+        columns: 1;
+    }
+
+    
 }
