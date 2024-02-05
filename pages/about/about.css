@@ -1,11 +1,45 @@
 @import url(../../general/default.css);
 
 main {
-    margin: 2rem;
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#practitioner > p, #about-np > p {
+    text-align: justify;
 }
 
 h4 {
     font-size: 1.25rem;
+}
+
+h3 {
+    clear: left;
+}
+
+.profile img {
+    margin: 0;
+    flex: 3;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.profile {
+    background-color: #6D9ACA;
+    width: 70%;
+    max-width: 40rem;
+    align-items: flex-start;
+    border-radius: 2rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile p {
+    font-size: 1.25rem;
+    flex: 2;
+    margin: 1rem;
 }
 
 .question-bar {
@@ -69,4 +103,35 @@ h4 {
 
 #pathway > div.active:hover {
     background-color: #6D9ACA;
+}
+
+
+@media (max-width: 620px) {
+    .profile {
+        flex-direction: column;
+        background-color: unset;
+        align-items: center;
+        margin-bottom: .25rem;
+        width: unset;
+    }
+
+    .profile img {
+        width: 100%;
+        border-radius: 0;
+    }
+    .profile div {
+        background-color: #6D9ACA90;
+        width: 90%;
+        text-align: center;
+        position: relative;
+        top: -2rem;
+        text-shadow: 1px 1px 1px navy;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        float: none;
+        margin-right: 0;
+    }
 }

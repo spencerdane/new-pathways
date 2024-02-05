@@ -113,23 +113,6 @@ a:hover {
     text-shadow: 1px 1px 1px navy;
 }
 
-.profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.75rem;
-}
-
-.profile.right {
-    flex-direction: row-reverse;
-    
-}
-
-.profile img {
-    width: 8rem;
-    margin: 2rem;
-}
-
 aside {
     background-color: #FCF3C1;
     grid-row: 2/6;

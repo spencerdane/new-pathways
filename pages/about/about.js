@@ -27,22 +27,48 @@ function findFAQ(phase) {
         case "#phase5":
             return "faq5";
         default:
-            console.log("No question found.");
+            return null;
+    }
+}
+
+function findPhase(faq) {
+    switch (faq) {
+        case "faq1":
+            return "#phase4";
+        case "faq2":
+            return "#phase3";
+        case "faq3":
+            return "#phase1";
+        case "faq4":
+            return "#phase2";
+        case "faq5":
+            return "#phase5";
+        default:
+            return null;
     }
 }
 
 //Function for the 24 Week Breakdown
-function revealPhase(phase) {
+function revealPhase(phase, selfInit=true) {
     $(phase).toggleClass("active");
     if (lastPhase && lastPhase !== phase) {
         $(lastPhase).removeClass("active");
     }
+    
     lastPhase = phase;
-    revealAnswer(findFAQ(phase));
+    var faq = findFAQ(phase);
+    if (selfInit) {
+        revealAnswer(faq, false);
+        if ($(phase).hasClass("active")) {
+            $("html").animate({
+                scrollTop: $("#" + findFAQ(phase)).offset().top
+            }, 1000);
+        }
+    }
 }
 
 //Functions for the FAQs section.
-function revealAnswer(currentAction) {
+function revealAnswer(currentAction, selfInit=true) {
     if (lastAction !== currentAction && lastAction) {
         changeIcon(lastAction, true);
         $("#" + lastAction + " + .answer").slideUp(500);
@@ -50,6 +76,9 @@ function revealAnswer(currentAction) {
 
     changeIcon(currentAction);
     $("#" + currentAction + " + .answer").slideToggle(500);
+    if (selfInit) {
+        revealPhase(findPhase(currentAction), false);
+    }
     lastAction = currentAction;
 }
 

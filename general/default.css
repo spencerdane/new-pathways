@@ -177,6 +177,23 @@ h2 {
     background-color: #FEFDEF;
 }
 
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.profile.right {
+    flex-direction: row-reverse;
+    
+}
+
+.profile img {
+    width: 8rem;
+    margin: 2rem;
+}
+
 footer {
     background-color: #6D9ACA;
     display: flex;
