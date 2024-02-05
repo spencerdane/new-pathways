@@ -1,11 +1,15 @@
 @import url(../../general/default.css);
 
-#faqs {
-    margin: 1rem 0;
+main {
+    margin: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 .question-bar {
-    margin: 1rem 1rem 0;
+    margin: 1rem 0 0;
     padding: .25rem;
     display: flex;
     align-items: center;
@@ -13,20 +17,56 @@
 }
 
 .question-bar .question {
-    margin: 0;
-    margin-right: 2.5rem;
+    margin: 0 3rem 0 1.5rem;
     font-size: 1.5rem;
 }
 
-p.answer {
-    margin: 0 1rem;
+.answer {
+    margin: 0;
     box-shadow: 2px 2px 2px #6D9ACA;
-    padding: .5rem;
+    padding: 1rem 1rem 1rem 3rem;
     font-size: 1.25rem;
+}
+
+.answer span {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .question-bar img {
     height: 2rem;
     position: absolute;
-    right: 1.5rem;
+    right: 3rem;
+}
+
+#pathway {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pathway > div {
+    flex: 1 0 15rem;
+    max-width: 30rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 2px solid #6D9ACA;
+    padding: .5rem 1rem;
+    margin: -1px;
+}
+
+#pathway > div:hover {
+    background-color: #ffffff90;
+}
+
+#pathway > div:focus, #pathway > div:active {
+    background-color: #6D9ACA;
+}
+
+.active {
+    background-color: #6D9ACA;
+}
+
+#pathway > div.active:hover {
+    background-color: #6D9ACA;
 }
