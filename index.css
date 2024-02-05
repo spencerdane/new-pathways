@@ -4,6 +4,7 @@ main {
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content min-content;
     grid-template-columns: 1fr 1fr 1fr 20%;
+    font-family: Verdana, sans-serif;
 }
 
 h2 {
@@ -23,7 +24,7 @@ a:hover {
 
 .question.btn {
     justify-self: center;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +33,9 @@ a:hover {
     width: fit-content;
     background-color: #6D9ACA;
     transition: all .2s ease-out;
+    font-family: Bellota, sans-serif;
+    text-shadow: 1px 1px 1px #B8ECEF;
+    font-weight: bold;
 }
 
 .question.btn:hover {
@@ -104,6 +108,9 @@ a:hover {
     grid-column: 1/-1;
     padding: 2rem 8rem;
     text-align: center;
+    font-family: Bellota, sans-serif;
+    color: #6D9ACA;
+    text-shadow: 1px 1px 1px navy;
 }
 
 .profile {
@@ -170,7 +177,16 @@ aside div a img {
     }
 
     .btn.question {
-        width: 70%;
+        margin: 0 1rem 1rem;
+    }
+
+    .answer.block {
+        grid-column: 1/4;
+        margin: 1rem;
+    }
+
+    .profile {
+        font-size: 1.5rem;
     }
 }
 
@@ -244,14 +260,12 @@ aside div a img {
     }
     
     .answer.block {
-        margin: 0;
         margin-bottom: 1rem;
         padding: 1rem;
-        width: 90%;
     }
 
     .question.btn {
-        width: 90%;
+    
     }
 }
 

@@ -1,1 +1,32 @@
 @import url(../../general/default.css);
+
+#faqs {
+    margin: 1rem 0;
+}
+
+.question-bar {
+    margin: 1rem 1rem 0;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    background-color: #6D9ACA;
+}
+
+.question-bar .question {
+    margin: 0;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+}
+
+p.answer {
+    margin: 0 1rem;
+    box-shadow: 2px 2px 2px #6D9ACA;
+    padding: .5rem;
+    font-size: 1.25rem;
+}
+
+.question-bar img {
+    height: 2rem;
+    position: absolute;
+    right: 1.5rem;
+}
