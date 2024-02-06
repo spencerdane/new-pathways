@@ -19,13 +19,13 @@ function findFAQ(phase) {
         case "#phase1":
             return "faq3";
         case "#phase2":
-            return "faq4";
+            return "faq5";
         case "#phase3":
             return "faq2";
         case "#phase4":
             return "faq1";
         case "#phase5":
-            return "faq5";
+            return "faq6";
         default:
             return null;
     }
@@ -39,9 +39,9 @@ function findPhase(faq) {
             return "#phase3";
         case "faq3":
             return "#phase1";
-        case "faq4":
-            return "#phase2";
         case "faq5":
+            return "#phase2";
+        case "faq6":
             return "#phase5";
         default:
             return null;
@@ -90,8 +90,5 @@ function changeIcon(currentAction, forceClose=false) {
         $("#" + currentAction + " img.plus-sign").fadeIn(300);
         $("#" + currentAction + " img.minus-sign").fadeOut(200);
     }
- 
-    
-
 }
 

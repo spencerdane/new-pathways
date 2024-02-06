@@ -20,15 +20,18 @@ Light Green: 4AAE6C
 
 /*GENERAL STYLES*/
 html {
+    display: flex;
     font-size: 100%;
     color: navy;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 body {
     margin: 0;
     background-color: #A2E2E7;
     font-family: Bellota, Verdana, sans-serif;
+    max-width: 1400px;
 }
 
 /*HEADER STYLES INCLUDE NP ARTWORK, NAV BARS, AND LOGOS*/

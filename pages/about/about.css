@@ -7,8 +7,18 @@ main {
     align-items: center;
 }
 
+#faqs {
+    width: 100%;
+}
+
 #practitioner > p, #about-np > p {
     text-align: justify;
+    font-size: 1.25rem;
+    line-height: 2.5rem;;
+}
+
+.answer {
+    line-height: 2.5rem;
 }
 
 h4 {
@@ -16,6 +26,7 @@ h4 {
 }
 
 h3 {
+    font-size: 1.5rem;
     clear: left;
 }
 
@@ -29,7 +40,7 @@ h3 {
     background-color: #6D9ACA;
     width: 70%;
     max-width: 40rem;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 2rem;
     float: left;
     margin-right: 2rem;
@@ -37,9 +48,14 @@ h3 {
 }
 
 .profile p {
+    font-size: 1rem;
+    margin: 0 1rem;
+    font-style: italic;
+}
+
+.profile h4 {
     font-size: 1.25rem;
-    flex: 2;
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .question-bar {
@@ -80,7 +96,8 @@ h3 {
 }
 
 #pathway > div {
-    flex: 1 0 15rem;
+    font-size: 1.25rem;
+    flex: 1 0 12rem;
     max-width: 30rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -105,14 +122,13 @@ h3 {
     background-color: #6D9ACA;
 }
 
-
-@media (max-width: 620px) {
+@media (max-width: 790px) {
     .profile {
         flex-direction: column;
         background-color: unset;
         align-items: center;
         margin-bottom: .25rem;
-        width: unset;
+        width: 65%;
     }
 
     .profile img {
@@ -126,11 +142,19 @@ h3 {
         position: relative;
         top: -2rem;
         text-shadow: 1px 1px 1px navy;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .answer, #practitioner > p, #about-np > p {
+        font-family: Verdana, sans-serif;
     }
 }
 
 @media (max-width: 500px) {
     .profile {
+        width: unset;
         float: none;
         margin-right: 0;
     }
