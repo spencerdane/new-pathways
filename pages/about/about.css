@@ -103,13 +103,14 @@ h3 {
 
 #pathway > div {
     font-size: 1.25rem;
-    flex: 1 0 12rem;
+    flex: 1 0 15rem;
     max-width: 30rem;
     margin-bottom: 1rem;
     text-align: center;
     border: 2px solid #6D9ACA;
     padding: .5rem 1rem;
     margin: -1px;
+    margin-top: .5rem;
 }
 
 #pathway > div:hover {
@@ -160,6 +161,10 @@ h3 {
     .answer, #practitioner > p, #about-np > p {
         font-family: Verdana, sans-serif;
         font-size: 1rem;
+    }
+
+    #pathway > div {
+        margin-top: -1px;
     }
 }
 

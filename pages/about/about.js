@@ -13,74 +13,51 @@ $(".question-bar").on("click", function () {
     revealAnswer($(this).attr("id"));
 })
 
-//Internal function that connects a "Phase" selection to a specific FAQ.
-function findFAQ(phase) {
-    switch (phase) {
-        case "#phase1":
-            return "faq3";
-        case "#phase2":
-            return "faq5";
-        case "#phase3":
-            return "faq2";
-        case "#phase4":
-            return "faq1";
-        case "#phase5":
-            return "faq6";
-        default:
-            return null;
-    }
-}
-
-function findPhase(faq) {
-    switch (faq) {
-        case "faq1":
-            return "#phase4";
-        case "faq2":
-            return "#phase3";
-        case "faq3":
-            return "#phase1";
-        case "faq5":
-            return "#phase2";
-        case "faq6":
-            return "#phase5";
-        default:
-            return null;
-    }
-}
-
 //Function for the 24 Week Breakdown
-function revealPhase(phase, selfInit=true) {
+function revealPhase(phase) {
     $(phase).toggleClass("active");
+    $(phase + "-info .answer").slideToggle("hidden");
+    
     if (lastPhase && lastPhase !== phase) {
-        $(lastPhase).removeClass("active");
+        closeLastPhase();
     }
     
+    if ($(phase).hasClass("active")) {
+        $("html").animate({scrollTop: $("#phase1-info").position().top
+        }, 1000);
+    }
+    closeLastAnswer();
     lastPhase = phase;
-    var faq = findFAQ(phase);
-    if (selfInit) {
-        revealAnswer(faq, false);
-        if ($(phase).hasClass("active")) {
-            $("html").animate({
-                scrollTop: $("#" + findFAQ(phase)).offset().top
-            }, 1000);
-        }
+}
+
+function closeLastPhase() {
+    if (lastPhase) {
+        $(lastPhase).removeClass("active");
+        $(lastPhase + "-info .answer").slideUp("hidden");
+        lastPhase = "";
+    }  
+}
+
+function closeLastAnswer() {
+    if (lastAction) {
+        changeIcon(lastAction, true);
+        $("#" + lastAction + " + .answer").slideUp(500);
+        lastAction = "";
     }
 }
 
 //Functions for the FAQs section.
-function revealAnswer(currentAction, selfInit=true) {
+function revealAnswer(currentAction) {
     if (lastAction !== currentAction && lastAction) {
-        changeIcon(lastAction, true);
-        $("#" + lastAction + " + .answer").slideUp(500);
+        closeLastAnswer();
     }
 
     changeIcon(currentAction);
     $("#" + currentAction + " + .answer").slideToggle(500);
-    if (selfInit) {
-        revealPhase(findPhase(currentAction), false);
-    }
+    closeLastPhase();
     lastAction = currentAction;
 }
+
 
 function changeIcon(currentAction, forceClose=false) {
     if (!forceClose) {
