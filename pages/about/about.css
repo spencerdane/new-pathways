@@ -121,6 +121,11 @@ h3 {
     background-color: #FEFDEF;
 }
 
+#phase-info .answer {
+    border: 1px solid #6D9ACA;
+    margin-top: .5rem;
+}
+
 .active {
     background-color: #FEFDEF;
 }

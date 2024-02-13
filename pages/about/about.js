@@ -23,7 +23,7 @@ function revealPhase(phase) {
     }
     
     if ($(phase).hasClass("active")) {
-        $("html").animate({scrollTop: $("#phase1-info").position().top
+        $("html").animate({scrollTop: $("#phase1-info").position().top - 50
         }, 1000);
     }
     closeLastAnswer();
