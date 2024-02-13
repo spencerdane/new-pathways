@@ -23,6 +23,7 @@ main {
 
 h4 {
     font-size: 1.25rem;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -67,7 +68,7 @@ h3 {
 }
 
 .question-bar .question {
-    margin: 0 3rem 0 1.5rem;
+    margin: 0 1rem 0 1.5rem;
     font-size: 1.5rem;
 }
 
@@ -158,5 +159,25 @@ h3 {
         width: unset;
         float: none;
         margin-right: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    #practitioner > p, #about-np > p {
+        line-height: 1.5rem;;
+    }
+
+    main {
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .question-bar .question {
+        font-size: 1.1rem;
+    }
+    
+    #faqs .answer {
+        font-size: 1.1rem;
+        line-height: 1.5rem;;
+        padding-left: 1rem;
     }
 }

@@ -21,6 +21,7 @@ Light Green: 4AAE6C
 /*GENERAL STYLES*/
 html {
     display: flex;
+    flex-direction: column;
     font-size: 100%;
     color: navy;
     box-sizing: border-box;
