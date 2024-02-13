@@ -85,8 +85,9 @@ h3 {
 
 .question-bar img {
     height: 2rem;
-    position: absolute;
-    right: 3rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 #pathway {
@@ -111,15 +112,15 @@ h3 {
 }
 
 #pathway > div:focus, #pathway > div:active {
-    background-color: #6D9ACA;
+    background-color: #FEFDEF;
 }
 
 .active {
-    background-color: #6D9ACA;
+    background-color: #FEFDEF;
 }
 
 #pathway > div.active:hover {
-    background-color: #6D9ACA;
+    background-color: #FEFDEF;
 }
 
 @media (max-width: 790px) {
