@@ -21,14 +21,18 @@ main {
     line-height: 2.5rem;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 h4 {
     font-size: 1.25rem;
-    margin-bottom: 0;
 }
 
 h3 {
     font-size: 1.5rem;
     clear: left;
+    margin-top: 4rem;
 }
 
 .profile img {
@@ -39,7 +43,7 @@ h3 {
 
 .profile {
     background-color: #6D9ACA;
-    width: 70%;
+    width: 60%;
     max-width: 40rem;
     align-items: center;
     border-radius: 2rem;
@@ -130,7 +134,7 @@ h3 {
         background-color: unset;
         align-items: center;
         margin-bottom: .25rem;
-        width: 65%;
+        width: 60%;
     }
 
     .profile img {
@@ -146,11 +150,16 @@ h3 {
         text-shadow: 1px 1px 1px navy;
         padding: 1rem 0;
     }
+
+    h3 {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 620px) {
     .answer, #practitioner > p, #about-np > p {
         font-family: Verdana, sans-serif;
+        font-size: 1rem;
     }
 }
 

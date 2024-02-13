@@ -84,14 +84,14 @@ function revealAnswer(currentAction, selfInit=true) {
 
 function changeIcon(currentAction, forceClose=false) {
     if (!forceClose) {
-        $("#" + currentAction + " img.visible").fadeToggle(1);
-        $("#" + currentAction + " img.invisible").delay(1).fadeToggle(1);
+        $("#" + currentAction + " img.visible").fadeToggle(2);
+        $("#" + currentAction + " img.invisible").delay(2).fadeToggle(2);
         $("#" + currentAction + " img").delay(1).toggleClass("visible invisible");
     } else {
-        $("#" + currentAction + " img.plus-sign").delay(1).fadeIn(1);
-        $("#" + currentAction + " img.minus-sign").fadeOut(1);
-        $("#" + currentAction + " img.plus-sign").delay(1).addClass("visible");
-        $("#" + currentAction + " img.plus-sign").delay(1).removeClass("invisible");
+        $("#" + currentAction + " img.plus-sign").delay(2).fadeIn(2);
+        $("#" + currentAction + " img.minus-sign").fadeOut(2);
+        $("#" + currentAction + " img.plus-sign").delay(2).addClass("visible");
+        $("#" + currentAction + " img.plus-sign").delay(2).removeClass("invisible");
         $("#" + currentAction + " img.minus-sign").addClass("invisible");
         $("#" + currentAction + " img.minus-sign").removeClass("visible");
     }

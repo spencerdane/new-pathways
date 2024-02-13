@@ -112,7 +112,12 @@ a:hover {
     text-align: center;
     font-family: Bellota, sans-serif;
     color: #6D9ACA;
-    text-shadow: 1px 1px 1px navy;
+    font-weight: bold;
+}
+
+.profile {
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 aside {
@@ -171,7 +176,7 @@ aside div a img {
     }
 
     .profile {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -208,7 +213,7 @@ aside div a img {
     }
 
     .profile {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 }
 
