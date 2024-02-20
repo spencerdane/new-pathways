@@ -67,6 +67,7 @@ h1 {
 
 .menu-icon {
     width: 3rem;
+    margin-right: .5rem;
 }
 
 .menu-icon:hover, .menu-icon:focus {
@@ -263,6 +264,11 @@ footer img:hover {
 
 
 /*MOBILE SCREEN*/
+@media (max-width: 1400px) {
+    body {
+        min-width: 100vw;
+    }
+}
 @media (max-width: 620px) {
     .mobile-banner {
         display: flex;
