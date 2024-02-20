@@ -11,6 +11,7 @@ $(".btn.question").on("click", function (){
 function revealAnswer(answer, last = lastAnswer) {
     if ($(".answer.block" + answer).hasClass("hidden") && allHidden){
         $(".answer.block" + answer).slideDown(500);
+        $("html").animate({scrollTop: $(answer).position().top}, 1000);
         $(".answer.block" + answer).removeClass("hidden");
         allHidden = false;
     } else if (!$(".answer.block" + answer).hasClass("hidden")) {
@@ -22,6 +23,9 @@ function revealAnswer(answer, last = lastAnswer) {
         $(".answer.block" + lastAnswer).addClass("hidden");
         $(".answer.block" + answer).slideDown(500);
         $(".answer.block" + answer).removeClass("hidden");
+        setTimeout(function () {
+            $("html").animate({scrollTop: $(answer).position().top}, 1000);
+        }, 500);
     }
 }
 
