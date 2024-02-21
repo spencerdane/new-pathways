@@ -7,10 +7,6 @@ main {
     align-items: center;
 }
 
-h2 {
-    margin-bottom: 0;
-}
-
 .answer {
     box-shadow: 2px 2px 4px #6D9ACA;
     padding: 1rem 2rem;

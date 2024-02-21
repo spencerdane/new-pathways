@@ -23,15 +23,16 @@ main {
 }
 
 .photo-tile img {
-    width: 100%;
     border-radius: 2rem;
     object-fit: cover;
     height: 20rem;
     margin-bottom: -4rem;
+    border: 1px solid #6d9ACA;
+
 }
 
 .btn {
-    max-width: 8rem;
+    max-width: fit-content;
     align-self: flex-end;
     margin-right: 2rem;
 }
