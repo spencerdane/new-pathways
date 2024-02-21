@@ -1,0 +1,78 @@
+@import url("../../../general/default.css");
+
+main {
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#faqs {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.question-bar {
+    margin: 1rem 0 0;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    background-color: #6D9ACA;
+}
+
+.question-bar .question {
+    margin: 0 1rem 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.answer {
+    margin: 0;
+    box-shadow: 2px 2px 2px #6D9ACA;
+    padding: 1rem 1rem 1rem 3rem;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.answer span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.question-bar img {
+    height: 2rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 620px) {
+    .answer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    main {
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .question-bar .question {
+        font-size: 1.1rem;
+    }
+    
+    #faqs .answer {
+        font-size: 1.1rem;
+        line-height: 1.5rem;;
+        padding-left: 1rem;
+    }
+}
