@@ -1,0 +1,103 @@
+@import url("../../../general/default.css");
+
+main {
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#practitioner > p {
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 2.5rem;;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    margin: 0;
+    flex: 3;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.profile {
+    background-color: #6D9ACA;
+    width: 60%;
+    max-width: 40rem;
+    align-items: center;
+    border-radius: 2rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile p {
+    font-size: 1rem;
+    margin: 0 1rem;
+    font-style: italic;
+}
+
+.profile h4 {
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 790px) {
+    .profile {
+        flex-direction: column;
+        background-color: unset;
+        align-items: center;
+        margin-bottom: .25rem;
+        width: 60%;
+    }
+
+    .profile img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .profile div {
+        background-color: #6D9ACA90;
+        width: 90%;
+        text-align: center;
+        position: relative;
+        top: -2rem;
+        text-shadow: 1px 1px 1px navy;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 620px) {
+    #practitioner > p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        width: unset;
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    #practitioner > p {
+        line-height: 1.5rem;;
+    }
+
+    main {
+        margin: 0 1rem 2rem 1rem;
+    }
+}

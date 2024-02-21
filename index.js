@@ -1,12 +1,6 @@
 var allHidden = true;
 var lastAnswer = "";
 
-//Email Obfcation prepares the email address on load.
-$(window).on("load", function (){
-    var subject = $(".free-consult").attr("href") + "?subject=Free CBT Consultation";
-    $(".free-consult").attr("href", subject);
-});
-
 
 $(".btn.question").on("click", function (){
     var answer = $(this).attr("class");

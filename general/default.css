@@ -266,7 +266,7 @@ footer img:hover {
 /*MOBILE SCREEN*/
 @media (max-width: 1400px) {
     body {
-        min-width: 100vw;
+        min-width: 96vw;
     }
 }
 @media (max-width: 620px) {
