@@ -22,6 +22,6 @@ $(window).on("load", function () {
     var user = "newpathwayscbt";
     var site1 = "gma";
     var site2 = "il.com";
-    $(".emobs").attr("href", attr1 + attr2 + user + "@" + site1 + site2);
-    $(".my-email").html(user + "<wbr>git @" + site1 + site2);
+    $(".emob").attr("href", attr1 + attr2 + user + "@" + site1 + site2);
+    $(".my-email").html(user + "<wbr>@" + site1 + site2);
 })

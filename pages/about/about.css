@@ -164,12 +164,15 @@ h3 {
 
 @media (max-width: 620px) {
     .answer, #practitioner > p, #about-np > p {
-        font-family: Verdana, sans-serif;
         font-size: 1rem;
     }
 
     #pathway > div {
         margin-top: -1px;
+    }
+
+    #practitioner > p, #about-np > p {
+        line-height: 1.75rem;
     }
 }
 

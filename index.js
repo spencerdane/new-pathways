@@ -3,7 +3,7 @@ var lastAnswer = "";
 
 //Email Obfcation prepares the email address on load.
 $(window).on("load", function (){
-    var subject = $(".free-consult").attr("href") + "?subject=Free CBT Consult";
+    var subject = $(".free-consult").attr("href") + "?subject=Free CBT Consultation";
     $(".free-consult").attr("href", subject);
 });
 
