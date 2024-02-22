@@ -141,7 +141,7 @@ nav.mobile-nav li {
 }
 
 nav.mobile-nav a:link, nav.mobile-nav a:visited {
-    border-top: solid navy;
+    border-top: 1px solid navy;
     background-color: #6D9ACA;
     border-radius: 0;
     color: navy;
