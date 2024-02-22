@@ -15,7 +15,7 @@ main {
 }
 
 h2 {
-    margin-bottom: 0;
+    margin-bottom: 2.25rem;
 }
 
 .nav-buttons {
@@ -25,19 +25,53 @@ h2 {
     margin-top: 4rem;
 }
 
+img {
+    float: right;
+    width: 28rem;
+    margin: 0 0 0 2rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 900px) {
+    img {
+        width: 50%;
+    }
+}
+
 @media (max-width: 620px) {
     #about-np {
         font-size: 1rem;
         line-height: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-buttons {
+        font-size: .75rem;
+    }
+
+    img {
+        float: none;
+        width: 90%;
+        margin-left: 0;
+        align-self: center;
     }
 }
 
+
+
 @media (max-width: 460px) {
     #about-np {
-        line-height: 1.75rem;;
+        line-height: 1.75rem;
     }
 
+    img {
+        width: 100%;
+    }
+    
     main {
         margin: 0 1rem 2rem 1rem;
     }
+
+    
 }
