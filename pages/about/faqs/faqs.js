@@ -7,23 +7,22 @@ $(".question-bar").on("click", function () {
 })
 
 //Functions for the FAQs section.
+function revealAnswer(currentAction) {
+    if (lastAction && lastAction !== currentAction) {
+        closeLastAnswer();
+    }
+
+    changeIcon(currentAction);
+    $("#" + currentAction + " + .answer").slideToggle(500);
+    lastAction = currentAction;
+}
+
 function closeLastAnswer() {
     if (lastAction) {
         changeIcon(lastAction, true);
         $("#" + lastAction + " + .answer").slideUp(500);
         lastAction = "";
     }
-}
-
-function revealAnswer(currentAction) {
-    if (lastAction !== currentAction && lastAction) {
-        closeLastAnswer();
-    }
-
-    changeIcon(currentAction);
-    $("#" + currentAction + " + .answer").slideToggle(500);
-    closeLastAnswer();
-    lastAction = currentAction;
 }
 
 function changeIcon(currentAction, forceClose=false) {

@@ -22,6 +22,8 @@ h2 {
     display: flex;
     align-items: center;
     background-color: #6D9ACA;
+    box-shadow: 2px 2px 6px navy;
+
 }
 
 .question-bar .question {
@@ -31,10 +33,12 @@ h2 {
 
 .answer {
     margin: 0;
-    box-shadow: 2px 2px 2px #6D9ACA;
     padding: 1rem 1rem 1rem 3rem;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border: 1px solid #6D9ACA;
+    box-shadow: 2px 2px 6px navy;
+
 }
 
 .answer span {
@@ -53,11 +57,21 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 2rem;
 }
 
 @media (max-width: 620px) {
+    .question-bar .question {
+        font-size: 1.15rem;
+    }
+
     .answer {
-        font-size: 1rem;
+        font-size: 1.15rem;
+        line-height: 2.25rem;
+    }
+
+    .nav-buttons {
+        font-size: .75rem;
     }
 }
 
@@ -67,12 +81,12 @@ h2 {
     }
 
     .question-bar .question {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     #faqs .answer {
-        font-size: 1.1rem;
-        line-height: 1.5rem;;
+        font-size: 1rem;
+        line-height: 1.75rem;;
         padding-left: 1rem;
     }
 }
