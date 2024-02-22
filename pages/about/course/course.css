@@ -7,10 +7,16 @@ main {
     align-items: center;
 }
 
+main > p, .answer {
+    font-size: 1.25rem;
+    line-height: 3rem;
+}
+
 .answer {
     box-shadow: 2px 2px 4px #6D9ACA;
     padding: 1rem 2rem;
     background-color: #FEFDEF;
+    text-align: justify;
 }
 
 #pathway {
@@ -21,7 +27,7 @@ main {
 
 #pathway > div {
     font-size: 1.25rem;
-    flex: 1 0 15rem;
+    flex: 1 0 20rem;
     max-width: 30rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -42,6 +48,7 @@ main {
 #phase-info .answer {
     border: 1px solid #6D9ACA;
     margin-top: .5rem;
+    
 }
 
 .active {
@@ -59,9 +66,24 @@ main {
     margin-top: 4rem;
 }
 
+@media (max-width: 800px) {
+    #pathway > div {
+        flex: 1 0 15rem;
+    }
+}
+
 @media (max-width: 620px) {
     #pathway > div {
-        margin-top: -1px;
+        margin-top: -1px;   
+    }
+    #pathway > div {
+        flex: 1 0 16rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .answer, main > p {
+        line-height: 2rem;
     }
 }
 
@@ -70,3 +92,4 @@ main {
         margin: 0 1rem 2rem 1rem;
     }
 }
+
