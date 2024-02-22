@@ -46,6 +46,8 @@ h2 {
 }
 
 h3 {
+    color: #6D9ACA;
+    text-shadow: 1px 1px 1px navy;
     font-size: 1.5rem;
     clear: left;
     margin-top: 2rem;
@@ -53,12 +55,40 @@ h3 {
 
 @media (max-width: 790px) {
     h3 {
+        font-size: 1.25rem;
         margin-top: 2rem;
     }
 }
 
+@media (max-width: 710px) {
+    .photo-tile {
+        width: 80%;
+    }
+ }
+
+ @media (max-width: 620px) {
+    h3 {
+        margin: 1rem 0;
+    }
+
+    .photo-tile {
+        width: 90%;
+    }
+ }
+
 @media (max-width: 460px) {
     main {
         margin: 0 1rem 2rem 1rem;
+    }
+
+    .photo-tile {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .btn {
+        align-self: center;
+        margin: 0;
     }
 }
